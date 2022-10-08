@@ -1,0 +1,18 @@
+/*
+SQLyog Community v13.1.9 (64 bit)
+MySQL - 5.7.33-log 
+*********************************************************************
+*/
+/*!40101 SET NAMES utf8 */;
+
+create table `ITINERARIES_EXTENSION` (
+	`ID` bigint (20),
+	`ITINERARY_ID` bigint (20),
+	`PG_TRANSACTION_FEE` Decimal (14),
+	`BOOKING_ID` varchar (90),
+	`LAST_UPDATED` timestamp ,
+	`OPTLOCK_VERSION` int (8),
+	`LAST_UPDATED_BY` varchar (150),
+	`REVIEW_INFORMATION_VERSION_TWO_ID` bigint (20)
+); 
+insert into `ITINERARIES_EXTENSION` (`ID`, `ITINERARY_ID`, `PG_TRANSACTION_FEE`, `BOOKING_ID`, `LAST_UPDATED`, `OPTLOCK_VERSION`, `LAST_UPDATED_BY`, `REVIEW_INFORMATION_VERSION_TWO_ID`) values('51','285821','167.55','8496379','2022-09-29 17:40:45','1','online@indianeagle.com','4475');
